@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityAid Recommendation - Sign In</title>
+    <link rel="icon" href="./files/cityaid-logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <img src="{{ url_for('static', filename='files/CityAid.png') }}" class="logo" alt="Logo" title="CityAid Recommendations">
+    <ul class="navbar">
+        <li>
+            <a href="./">Home</a>
+            <a href="./categories">Categories</a>
+            <a href="./chat">Chatbot</a>
+            <a href="./register">Sign Up</a>
+            <a href="./login">Sign In</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Login Form Section -->
+<section class="login-form-container">
+    <div class="form-content">
+        <h2>Sign In</h2>
+        <form id="login-form" method="POST" class="login-form">
+            <div class="input-group">
+                <label for="email">Email Address:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="Enter your email address"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required 
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <div class="input-group">
+                <button type="submit" class="login-btn">Sign In</button>
+            </div>
+
+            <!-- Add a container to display error messages -->
+            <div id="error-message" class="error-message" style="color: red;">
+                <!-- Dynamic error messages will appear here -->
+            </div>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="./register">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script>
+    // Handle error display if the server responds with an error
+    const form = document.getElementById("login-form");
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent default form submission
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch("/login", {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                document.getElementById("error-message").innerText = errorData.error;
+            } else {
+                // Redirect to chat page on successful login
+                window.location.href = "/chat";
+            }
+        } catch (error) {
+            document.getElementById("error-message").innerText = "An error occurred. Please try again.";
+        }
+    });
+</script>
+
+</body>
+</html>

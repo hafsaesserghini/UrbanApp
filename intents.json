@@ -1,0 +1,888 @@
+{
+    "intents": [
+      {
+        "tag": "Hi",
+        "patterns": [
+          "Hi",
+          "hello",
+          "Hello",
+          "Hey",
+          "Hi",
+          "Good morning",
+          "Greetings"
+        ],
+        "responses": [
+          "Hello!",
+          "Hi, how can I help you?",
+          "Hey there!",
+          "Good morning! How can I assist you today?"
+        ]
+      },
+      {
+        "tag": "Earthquake",
+        "patterns": [
+          "earthquake",
+          "tremor",
+          "seismic activity",
+          "quake",
+          "building shaking"
+        ],
+        "responses": [
+          "Drop, Cover, and Hold On under a sturdy piece of furniture.",
+          "Stay indoors until the shaking stops, or move to an open area if outside.",
+          "Avoid windows, heavy furniture, and structures that might collapse.",
+          "Check for injuries and provide first aid as needed."
+        ]
+      },
+      {
+        "tag": "Thank you",
+        "patterns": [
+          "Thank you",
+          "Thanks",
+          "Thank you very much",
+          "I appreciate it",
+          "Thanks a lot"
+        ],
+        "responses": [
+          "You're welcome!",
+          "My pleasure!",
+          "Glad I could help!",
+          "You're very welcome!"
+        ]
+      },
+      {
+        "tag": "How are you",
+        "patterns": [
+          "How are you?",
+          "How's it going?",
+          "How do you feel?",
+          "What's up?",
+          "How are things?"
+        ],
+        
+        "responses": [
+          "I'm just a bot, but I'm here to help!",
+          "I'm doing well, thank you for asking!",
+          "Great, how can I assist you today?",
+          "I'm good! What about you?"
+        ]
+      },
+      {
+        "tag": "Hi",
+        "patterns": [
+          "Hi",
+          "hello",
+          "Hello",
+          "Hey",
+          "Hi",
+          "Good morning",
+          "Greetings"
+        ],
+        "responses": [
+          "Hello!",
+          "Hi, how can I help you?",
+          "Hey there!",
+          "Good morning! How can I assist you today?"
+        ]
+      },
+      
+      {
+        "tag": "Goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Take care",
+          "Farewell"
+        ],
+        "responses": [
+          "Goodbye! Take care!",
+          "See you later!",
+          "Farewell!",
+          "Have a great day ahead!"
+        ]
+      },
+        {
+            "tag": "Thank you",
+            "patterns": [
+              "Thank you",
+              "Thanks",
+              "Thank you very much",
+              "I appreciate it",
+              "Thanks a lot"
+            ],
+            "responses": [
+              "You're welcome!",
+              "My pleasure!",
+              "Glad I could help!",
+              "You're very welcome!"
+            ]
+          },
+          
+        {
+            "tag": "Goodbye",
+            "patterns": [
+              "Bye",
+              "Goodbye",
+              "See you later",
+              "Take care",
+              "Farewell"
+            ],
+            "responses": [
+              "Goodbye! Take care!",
+              "See you later!",
+              "Farewell!",
+              "Have a great day ahead!"
+            ]
+          },
+  
+          
+         
+          
+      {
+        "tag": "Medical Emergency",
+        "patterns": [
+          "how to solve the problem of stroke?",
+           "what are the treatments for stroke?",
+           "how can stroke be prevented?",
+          "medical emergency",
+          "heart attack",
+          "stroke",
+          "chest pain",
+          "unconscious",
+          "severe bleeding"
+        ],
+        "responses": [
+          "Call emergency services immediately (911).",
+          "If the person is conscious, try to keep them calm.",
+          "Perform CPR if the person is unconscious and not breathing.",
+          "If the person is bleeding, apply direct pressure to the wound."
+        ]
+      },
+      {
+        "tag": "Power Outage",
+        "patterns": [
+          "power outage",
+          "blackout",
+          "electricity failure",
+          "lights out",
+          "no power"
+        ],
+        "responses": [
+          "Check if the outage is affecting only your home or the entire neighborhood.",
+          "Use flashlights instead of candles to prevent fire hazards.",
+          "Unplug sensitive electronics to avoid damage when power returns.",
+          "Wait for instructions from local power companies about the restoration timeline."
+        ]
+      },
+      {
+        "tag": "Fire",
+        "patterns": [
+          "What to do in case of a house fire?",
+    "I have a fire in my house, what should I do?",
+    "What to do if a house catches fire?",
+        
+          "fire",
+          "house fire",
+          "building fire",
+          "smoke",
+          "fire alarm",
+          "fire outbreak"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Evacuate the building if it is safe to do so.",
+          "Use a fire extinguisher only if the fire is small and manageable.",
+          "Do not use elevators during a fire; use the stairs."
+        ]
+      },
+      {
+        "tag": "Gas Leak",
+        "patterns": [
+          "gas leak",
+          "natural gas leak",
+          "smell of gas",
+          "leaking gas",
+          "gas emergency"
+        ],
+        "responses": [
+          "Evacuate the building immediately, without using electrical switches, lights, or phones.",
+          "Do not try to locate the leak yourself.",
+          "Call the gas company from a safe location.",
+          "Wait for professional responders to handle the leak safely."
+        ]
+      },
+      {
+        "tag": "Traffic Jam / Roadblock",
+        "patterns": [
+          "roadblock",
+          "closed road",
+          "road construction",
+          "traffic jam",
+          "traffic control",
+          "detour"
+        ],
+        "responses": [
+          "Use alternative routes if possible to avoid the area.",
+          "Listen to local traffic updates on the radio or use GPS for real-time information.",
+          "Stay calm and patient, as traffic may be slow for a while."
+        ]
+      },
+      {
+        "tag": "Flood",
+        "patterns": [
+          "flood",
+          "flash flood",
+          "water rising",
+          "rainstorm",
+          "damaged drainage",
+          "flood warning"
+        ],
+        "responses": [
+          "Move to higher ground immediately.",
+          "Avoid driving through flooded areas.",
+          "Listen for updates from local authorities about evacuation procedures."
+        ]
+      },
+      {
+        "tag": "Road Accident",
+        "patterns": [
+          "road accident",
+          "car crash",
+          "traffic collision",
+          "hit and run",
+          "vehicle accident"
+        ],
+        "responses": [
+          "Ensure your safety by moving to a safe location if possible.",
+          "Call emergency services (911) to report the accident.",
+          "Provide first aid to injured persons if you are trained to do so.",
+          "Exchange contact and insurance details with other parties involved.",
+          "Take photos of the accident scene for evidence."
+        ]
+      },
+      {
+        "tag": "Earthquake",
+        "patterns": [
+          "earthquake",
+          "tremor",
+          "seismic activity",
+          "quake",
+          "building shaking"
+        ],
+        "responses": [
+          "Drop, Cover, and Hold On under a sturdy piece of furniture.",
+          "Stay indoors until the shaking stops, or move to an open area if outside.",
+          "Avoid windows, heavy furniture, and structures that might collapse.",
+          "Check for injuries and provide first aid as needed."
+        ]
+      },
+      {
+        "tag": "Wildfire",
+        "patterns": [
+          "wildfire",
+          "forest fire",
+          "bushfire",
+          "fire hazard",
+          "smoke in forest"
+        ],
+        "responses": [
+          "Evacuate the area if local authorities issue a mandatory evacuation order.",
+          "Close all windows and doors to prevent smoke from entering.",
+          "Keep emergency supplies ready, including masks and water.",
+          "Listen to updates from local authorities about the fire's progress."
+        ]
+      },
+      {
+        "tag": "Chemical Spill",
+        "patterns": [
+          "chemical spill",
+          "toxic leak",
+          "hazardous material",
+          "chemical accident",
+          "spill emergency"
+        ],
+        "responses": [
+          "Evacuate the area immediately and avoid contact with the substance.",
+          "Call emergency services (911) and provide details about the spill.",
+          "Avoid inhaling fumes or touching the material without proper equipment.",
+          "Wait for professional responders to handle the cleanup safely."
+        ]
+      },
+      {
+        "tag": "Minor Traffic Accident",
+        "patterns": [
+          "minor accident",
+          "fender bender",
+          "small car crash",
+          "vehicle dent",
+          "minor collision"
+        ],
+        "responses": [
+          "Move vehicles to the side of the road, if safe to do so.",
+          "Turn on hazard lights to alert other drivers.",
+          "Exchange contact and insurance information with the other driver(s).",
+          "Document the scene with photos of the vehicles and surroundings.",
+          "Report the accident to your insurance company."
+        ]
+      },
+      {
+        "tag": "Major Traffic Accident",
+        "patterns": [
+          "major accident",
+          "serious car crash",
+          "high-speed collision",
+          "injury accident",
+          "severe traffic accident"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Check yourself and others for injuries and provide first aid if trained.",
+          "Do not move injured persons unless there is an immediate danger (e.g., fire).",
+          "Warn other drivers by using hazard lights or reflective triangles.",
+          "Wait for emergency responders and follow their instructions."
+        ]
+      },
+      {
+        "tag": "Pedestrian Traffic Accident",
+        "patterns": [
+          "pedestrian accident",
+          "hit pedestrian",
+          "pedestrian hit by car",
+          "crosswalk accident",
+          "pedestrian injury"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Provide first aid to the injured pedestrian, if you are trained.",
+          "Do not move the pedestrian unless there is a life-threatening situation.",
+          "Stay at the scene and cooperate with police and emergency personnel.",
+          "Collect witness information and document the scene for future reference."
+        ]
+      },
+      {
+        "tag": "Bicycle Traffic Accident",
+        "patterns": [
+          "bike accident",
+          "cyclist hit",
+          "bicycle collision",
+          "car hits cyclist",
+          "cycling accident"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Check the cyclist for injuries and provide first aid if necessary.",
+          "Ensure the cyclist's safety by moving them off the road, if possible.",
+          "Document the scene, including damage to the bicycle and vehicle.",
+          "Stay at the scene and cooperate with emergency personnel and police."
+        ]
+      },
+      {
+        "tag": "Highway Traffic Accident",
+        "patterns": [
+          "highway accident",
+          "freeway crash",
+          "multi-vehicle collision",
+          "pile-up",
+          "high-speed crash"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "If uninjured, move to a safe location away from traffic.",
+          "Warn other drivers using hazard lights, flares, or reflective triangles.",
+          "Do not attempt to cross lanes of traffic to assist others unless it is safe.",
+          "Wait for emergency responders and provide a clear account of the incident."
+        ]
+      },
+      {
+        "tag": "Animal Traffic Accident",
+        "patterns": [
+          "animal accident",
+          "hit animal",
+          "wildlife collision",
+          "animal on road",
+          "deer collision"
+        ],
+        "responses": [
+          "Move your vehicle to a safe location and turn on hazard lights.",
+          "Call local authorities or animal control if the animal is injured.",
+          "Do not approach a wild animal; wait for professionals to handle the situation.",
+          "Document the scene and check your vehicle for damage.",
+          "Report the incident to your insurance company if necessary."
+        ]
+      },
+      {
+        "tag": "Heart Attack",
+        "patterns": [
+          "heart attack",
+          "chest pain",
+          "cardiac arrest",
+          "heart emergency",
+          "severe chest discomfort"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Keep the person calm and seated in a comfortable position.",
+          "If the person has prescribed nitroglycerin, assist them in taking it.",
+          "Give them an aspirin to chew if they are not allergic or contraindicated.",
+          "Perform CPR if the person becomes unconscious and stops breathing."
+        ]
+      },
+      {
+        "tag": "Hypoglycemia (Low Blood Sugar)",
+        "patterns": [
+          "low blood sugar",
+          "hypoglycemia",
+          "diabetic emergency",
+          "shaking",
+          "sweating",
+          "confusion"
+        ],
+        "responses": [
+          "Offer them something sugary to eat or drink, such as juice, candy, or glucose tablets.",
+          "Encourage the person to check their blood sugar level, if possible.",
+          "If the person becomes unconscious, do not give them food or drink; call emergency services immediately.",
+          "Administer a glucagon injection if trained and the person carries one.",
+          "Stay with the person until they recover or help arrives."
+        ]
+      },
+      {
+        "tag": "Stroke",
+        "patterns": [
+          "stroke",
+          "slurred speech",
+          "drooping face",
+          "arm weakness",
+          "sudden confusion"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Ask the person to smile, raise both arms, and repeat a simple sentence to check for stroke signs (FAST test).",
+          "Do not give them food, drink, or medication.",
+          "Keep the person comfortable and stay with them until help arrives.",
+          "Note the time when symptoms started, as this can help doctors with treatment."
+        ]
+      },
+      {
+        "tag": "Seizure",
+        "patterns": [
+          "seizure",
+          "convulsions",
+          "epileptic attack",
+          "unconscious",
+          "jerking movements"
+        ],
+        "responses": [
+          "Do not restrain the person or put anything in their mouth.",
+          "Clear the area of any sharp or dangerous objects.",
+          "Place the person on their side to keep their airway clear.",
+          "Time the seizure; call emergency services (911) if it lasts longer than 5 minutes.",
+          "Stay with the person until they regain consciousness and are fully alert."
+        ]
+      },
+      {
+        "tag": "Heatstroke",
+        "patterns": [
+          "heatstroke",
+          "heat exhaustion",
+          "overheating",
+          "hot weather emergency",
+          "dehydration"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Move the person to a cool, shaded area.",
+          "Remove excess clothing and cool their body with wet cloths or a fan.",
+          "Offer sips of cool water if the person is conscious and not nauseous.",
+          "Monitor their condition until help arrives."
+        ]
+      },
+      {
+        "tag": "Fainting (Syncope)",
+        "patterns": [
+          "fainting",
+          "dizziness",
+          "unconsciousness",
+          "passing out",
+          "blackout"
+        ],
+        "responses": [
+          "Help the person lie down and elevate their legs to improve blood flow.",
+          "Loosen tight clothing, especially around the neck.",
+          "Check for injuries if they fainted and fell.",
+          "If the person does not regain consciousness within a minute, call emergency services (911).",
+          "Encourage the person to sit up slowly after regaining consciousness."
+        ]
+      },
+      {
+        "tag": "Performing CPR (Cardiopulmonary Resuscitation)",
+        "patterns": [
+          "how to perform CPR?",
+          "CPR",
+          "cardiac arrest",
+          "not breathing",
+          "no pulse",
+          "unconscious"
+        ],
+        "responses": [
+          "Ensure the area is safe for you and the person.",
+          "Check if the person is responsive by tapping their shoulder and asking, 'Are you okay?'",
+          "Call emergency services (911) or ask someone nearby to call.",
+          "Place the person on a flat, firm surface and kneel beside them.",
+          "Place the heel of one hand on the center of the chest, and your other hand on top, interlocking your fingers.",
+          "Push hard and fast at a depth of about 2 inches (5 cm) at a rate of 100-120 compressions per minute.",
+          "If trained, give 2 rescue breaths after every 30 compressions: tilt the head back, pinch the nose shut, and blow into their mouth.",
+          "Continue CPR until emergency help arrives or the person shows signs of life."
+        ]
+      },
+      {
+        "tag": "Choking",
+        "patterns": [
+          "choking",
+          "blocked airway",
+          "can't breathe",
+          "Heimlich maneuver",
+          "airway obstruction"
+        ],
+        "responses": [
+          "Ask the person, 'Are you choking?' and if you can help.",
+          "Stand behind them and wrap your arms around their waist.",
+          "Make a fist with one hand and place it just above their navel.",
+          "Grasp your fist with the other hand and deliver quick, upward abdominal thrusts.",
+          "Repeat until the object is expelled, or the person becomes unconscious.",
+          "If they lose consciousness, lay them on the ground and start CPR, checking for the object before giving breaths."
+        ]
+      },
+      {
+        "tag": "Severe Bleeding",
+        "patterns": [
+          "bleeding",
+          "severe bleeding",
+          "cut",
+          "open wound",
+          "blood loss"
+        ],
+        "responses": [
+          "Apply firm pressure to the wound with a clean cloth or bandage.",
+          "If possible, raise the injured area above the level of the heart.",
+          "Maintain pressure on the wound until bleeding stops or help arrives.",
+          "Do not remove the initial bandage; if soaked, apply another on top.",
+          "Call emergency services (911) for severe or uncontrollable bleeding."
+        ]
+      },
+      {
+        "tag": "Heart Attack",
+        "patterns": [
+          "heart attack",
+          "chest pain",
+          "difficulty breathing",
+          "sweating",
+          "pain in arm"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately.",
+          "Have the person sit down, rest, and try to stay calm.",
+          "If they are not allergic, give them an aspirin to chew slowly.",
+          "Loosen tight clothing to help them breathe more easily.",
+          "Monitor the person and be prepared to start CPR if they lose consciousness."
+        ]
+      },
+      {
+        "tag": "Downed Power Line",
+        "patterns": [
+          "downed power line",
+          "electric wire on ground",
+          "live wire",
+          "power line hazard"
+        ],
+        "responses": [
+          "Stay at least 30 feet away from the downed power line.",
+          "Do not touch the line or anything in contact with it, including vehicles or fences.",
+          "Call emergency services (911) and report the location of the downed line.",
+          "Warn others to stay away and avoid the area until help arrives.",
+          "If your vehicle is in contact with a live wire, stay inside unless there's immediate danger. Avoid stepping out as it can create a path for electricity to the ground."
+        ]
+      },
+      {
+        "tag": "Street Light Outage",
+        "patterns": [
+          "street light outage",
+          "broken street light",
+          "dark street",
+          "no street lighting"
+        ],
+        "responses": [
+          "Note the exact location and any identifying information on the street light pole (e.g., pole number).",
+          "Report the issue to the local electricity company or municipality.",
+          "Advise pedestrians and drivers to exercise extra caution in the area at night."
+        ]
+      },
+      {
+        "tag": "Damaged Electric Pole",
+        "patterns": [
+          "electric pole damage",
+          "pole leaning",
+          "damaged pole",
+          "pole fire"
+        ],
+        "responses": [
+          "Stay away from the pole and any surrounding wires.",
+          "Call emergency services (911) and provide the location.",
+          "If you see fire or smoke, report it to the fire department as well.",
+          "Do not attempt to fix or stabilize the pole yourself."
+        ]
+      },
+      {
+        "tag": "Power Outage in Streets",
+        "patterns": [
+          "power outage",
+          "no electricity",
+          "blackout",
+          "street blackout",
+          "area-wide outage"
+        ],
+        "responses": [
+          "Report the outage to the local electricity provider, providing details about the affected area.",
+          "Avoid using candles outdoors to prevent fire hazards.",
+          "Encourage community members to use flashlights or other battery-powered lights.",
+          "Wait for updates from local authorities regarding restoration efforts."
+        ]
+      },
+      {
+        "tag": "Street Flooding",
+        "patterns": [
+          "flooding",
+          "street flooding",
+          "water overflow",
+          "heavy rain",
+          "blocked drainage"
+        ],
+        "responses": [
+          "Avoid driving or walking through flooded streets; water may be deeper than it appears.",
+          "Report the flooding to local municipal services or drainage authorities.",
+          "Warn others about the flooded area to prevent accidents.",
+          "If safe, clear small debris from drainage to help water flow."
+        ]
+      },
+      {
+        "tag": "Flash Flood",
+        "patterns": [
+          "flash flood",
+          "sudden flood",
+          "fast-moving water",
+          "unexpected flooding"
+        ],
+        "responses": [
+          "Move to higher ground immediately and avoid low-lying areas.",
+          "Do not attempt to cross moving water, whether on foot or in a vehicle.",
+          "Listen to emergency alerts and follow instructions from authorities.",
+          "Evacuate the area if directed to do so."
+        ]
+      },
+      {
+        "tag": "River Flooding",
+        "patterns": [
+          "river flood",
+          "overflowing river",
+          "dam flooding",
+          "flooded banks"
+        ],
+        "responses": [
+          "Monitor water levels and stay informed through local news or weather updates.",
+          "Evacuate if authorities issue a flood evacuation order.",
+          "Do not attempt to walk or drive through flooded areas near the riverbank.",
+          "Secure your belongings and move valuables to higher ground."
+        ]
+      },
+      {
+        "tag": "Urban Flooding",
+        "patterns": [
+          "urban flooding",
+          "city flood",
+          "sewer overflow",
+          "basement flooding"
+        ],
+        "responses": [
+          "Avoid walking or driving through flooded streets or basements.",
+          "Report the flooding to local municipal or drainage authorities.",
+          "Ensure that electrical appliances and outlets are above flood levels to prevent electrocution.",
+          "If safe, clear debris from storm drains near your property to improve water flow."
+        ]
+      },
+      {
+        "tag": "Coastal Flooding",
+        "patterns": [
+          "coastal flooding",
+          "storm surge",
+          "high tides flooding",
+          "ocean flooding"
+        ],
+        "responses": [
+          "Move to higher ground immediately, away from the coastline.",
+          "Monitor weather reports and evacuate if authorities issue a coastal flood warning.",
+          "Avoid beaches and waterfront areas during storms.",
+          "Secure loose outdoor items to prevent them from being swept away."
+        ]
+      },
+      {
+        "tag": "Building Fire",
+        "patterns": [
+          "house fire",
+          "building fire",
+          "smoke in building",
+          "fire alarm",
+          "fire emergency"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately and report the fire.",
+          "Evacuate the building using the nearest exit; do not use elevators.",
+          "Help others evacuate, but do not put yourself at risk.",
+          "If safe, close doors behind you to slow the spread of the fire."
+        ]
+      },
+      {
+        "tag": "Wildfire",
+        "patterns": [
+          "forest fire",
+          "wildfire",
+          "bushfire",
+          "smoke in forest",
+          "fire in woods"
+        ],
+        "responses": [
+          "Call emergency services (911) to report the wildfire.",
+          "Evacuate immediately if authorities issue an evacuation order.",
+          "If trapped, stay inside a building and close all doors and windows.",
+          "Avoid driving through areas affected by heavy smoke or fire."
+        ]
+      },
+      {
+        "tag": "Electrical Fire",
+        "patterns": [
+          "electrical fire",
+          "appliance fire",
+          "wiring fire",
+          "spark fire",
+          "power fire"
+        ],
+        "responses": [
+          "Turn off the power supply to the affected area, if it is safe to do so.",
+          "Use a Class C fire extinguisher to put out the fire; do not use water.",
+          "Evacuate the building if the fire cannot be controlled.",
+          "Call emergency services (911) immediately."
+        ]
+      },
+      {
+        "tag": "Vehicle Fire",
+        "patterns": [
+          "car fire",
+          "vehicle fire",
+          "engine fire",
+          "smoke in car",
+          "fire on road"
+        ],
+        "responses": [
+          "Pull over to a safe area and turn off the engine immediately.",
+          "Evacuate all passengers from the vehicle and move at least 100 feet away.",
+          "Do not attempt to open the hood if flames are visible.",
+          "Call emergency services (911) and report the fire."
+        ]
+      },
+      {
+        "tag": "Kitchen Fire",
+        "patterns": [
+          "kitchen fire",
+          "stove fire",
+          "pan fire",
+          "oil fire",
+          "cooking fire"
+        ],
+        "responses": [
+          "Turn off the heat source if it is safe to do so.",
+          "Cover the pan with a metal lid to smother the flames; do not use water on grease fires.",
+          "Use a Class B fire extinguisher to put out the fire.",
+          "Evacuate and call emergency services (911) if the fire spreads."
+        ]
+      },
+      {
+        "tag": "Robbery / Burglary",
+        "patterns": [
+          "robbery",
+          "theft",
+          "burglary",
+          "break-in",
+          "home invasion"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately and report the crime.",
+          "Do not touch anything to preserve evidence for law enforcement.",
+          "If the intruder is still present, leave the property quietly and seek safety.",
+          "Provide law enforcement with a detailed description of stolen items or the suspect, if possible."
+        ]
+      },
+      {
+        "tag": "Physical Assault",
+        "patterns": [
+          "assault",
+          "attack",
+          "physical fight",
+          "violence",
+          "self-defense"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately to report the assault.",
+          "Do not intervene unless it is safe to do so; prioritize your safety.",
+          "Provide first aid to any injured person if it is safe and you are trained to do so.",
+          "Stay on the scene to provide a witness statement to law enforcement."
+        ]
+      },
+      {
+        "tag": "Kidnapping / Abduction",
+        "patterns": [
+          "kidnapping",
+          "abduction",
+          "missing person",
+          "child abduction",
+          "hostage"
+        ],
+        "responses": [
+          "Call emergency services (911) immediately to report the abduction.",
+          "Provide as much detail as possible, including descriptions of the person, suspect, and any vehicles involved.",
+          "Alert neighbors and nearby people to assist in searching the area safely.",
+          "Monitor local Amber Alerts for updates on the situation."
+        ]
+      },
+      {
+        "tag": "Cybercrime",
+        "patterns": [
+          "cybercrime",
+          "identity theft",
+          "online fraud",
+          "phishing",
+          "hacking"
+        ],
+        "responses": [
+          "Report the cybercrime to local authorities or a cybercrime unit.",
+          "Change passwords and secure your accounts immediately.",
+          "Monitor your bank and credit accounts for suspicious activity.",
+          "Avoid clicking on links or responding to suspicious emails."
+        ]
+      },
+      {
+        "tag": "Vandalism",
+        "patterns": [
+          "vandalism",
+          "property damage",
+          "graffiti",
+          "broken windows",
+          "arson"
+        ],
+        "responses": [
+          "Call the police (911) to report the vandalism.",
+          "Document the damage with photographs for insurance and law enforcement purposes.",
+          "Secure the area to prevent further damage.",
+          "Work with local authorities and neighborhood watch programs to prevent future incidents."
+        ]
+      }
+    ]
+  }

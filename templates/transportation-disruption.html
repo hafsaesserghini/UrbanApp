@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Disruption | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}" class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories">Categories</a></li>
+            <li><a href="./chat">Chatbot</a></li>
+            <li><a href="./register">Sign Up</a></li>
+            <li><a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Transportation Disruption Section -->
+<section class="container transportation-disruption">
+    <div class="text">
+        <h2>Transportation Disruption Solutions</h2>
+    </div>
+
+    <!-- Transportation Disruption Issues and Solutions -->
+    <div class="emergency-grid">
+        <!-- Public Transport Delays -->
+        <div class="emergency-card">
+            <h3>Public Transport Delays</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/transport-delay.png') }}" alt="Public Transport Delays" title="Public Transport Delays">
+            </div>
+            <div class="emergency-details">
+                <p>How to manage public transport delays:</p>
+                <ul>
+                    <li>- Monitor real-time updates from public transport services.</li>
+                    <li>- Use ride-sharing or bike-sharing as an alternative when feasible.</li>
+                    <li>- Plan your commute during off-peak hours to avoid heavy delays.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fuel Shortage -->
+        <div class="emergency-card">
+            <h3>Fuel Shortage</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/fuel-shortage.png') }}" alt="Fuel Shortage" title="Fuel Shortage">
+            </div>
+            <div class="emergency-details">
+                <p>How to manage transportation during fuel shortages:</p>
+                <ul>
+                    <li>- Conserve fuel by using public transport or carpooling.</li>
+                    <li>- Monitor fuel availability at nearby stations using mobile apps.</li>
+                    <li>- Plan shorter commutes or work remotely if possible during shortages.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Infrastructure Failures -->
+        <div class="emergency-card">
+            <h3>Infrastructure Failures</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/infra.png') }}"  alt="Infrastructure Failures" title="Infrastructure Failures">
+            </div>
+            <div class="emergency-details">
+                <p>How to handle transportation disruptions caused by infrastructure failures:</p>
+                <ul>
+                    <li>- Use alternative routes and transportation modes to avoid blocked roads.</li>
+                    <li>- Stay updated on infrastructure repairs or closures via apps or news.</li>
+                    <li>- Communicate with transportation authorities for advice on detours.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Traffic Accidents -->
+        <div class="emergency-card">
+            <h3>Traffic Accidents</h3>
+            <div class="emergency-img">
+                <img  src="{{ url_for('static', filename='files/traffic.png') }}"  alt="Traffic Accidents" title="Traffic Accidents">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to take after a traffic accident:</p>
+                <ul>
+                    <li>- Check for injuries and call emergency services.</li>
+                    <li>- Report the accident to local authorities and provide necessary details.</li>
+                    <li>- Follow detours or alternate routes to avoid further delays.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI-Powered Search Section -->
+<section class="ai-search-section">
+    <h2>Ask Our Intelligent Assistant</h2>
+    <div class="ai-search-container">
+        
+        <p>Our AI analyzes thousands of real recommendations from users like you to provide the best choices tailored to your needs. Just type in what you're looking for, and let our smart assistant do the rest!</p>
+        <form action="chatbot.html" method="get" class="ai-search-form">
+            <div class="search-bar-wrapper">
+                <input 
+                    type="text" 
+                    name="query" 
+                    placeholder="What are you looking for?" 
+                    class="ai-search-bar" 
+                    required
+                >
+                <button type="submit" class="ai-search-btn">
+                    <img src="{{ url_for('static', filename='files/ai-icon.png') }}" alt="AI Icon" />
+                </button>
+            </div>
+        </form>
+        <div class="ai-search-note">
+            <p><strong>Tip:</strong> Try searching for traffic management, road closure solutions, or transport recovery systems.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Sign In</a></li>
+                    <li><a href="./login">Sign Up</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+</body>
+</html>

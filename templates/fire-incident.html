@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Incidents | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}" class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories">Categories</a></li>
+            <li><a href="./chat">Chatbot</a></li>
+            <li><a href="./register">Sign Up</a></li>
+            <li><a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container medical-emergencies">
+    <div class="text">
+        <h2>Fire Emergency Solutions</h2>
+    </div>
+
+    <!-- Fire Incident Solutions -->
+    <div class="emergency-grid">
+        <!-- House Fire -->
+        <div class="emergency-card">
+            <h3>House Fire</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/house-fire.png') }}" alt="House Fire" title="House Fire">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to take during a house fire:</p>
+                <ul>
+                    <li>- Evacuate the building immediately and call emergency services. <strong>Fire Brigade: 15</strong></li>
+                    <li>- Avoid using elevators during evacuation.</li>
+                    <li>- If smoke is present, stay low and crawl to safety.</li>
+                    <li>- Do not return to the building until authorities declare it safe.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Wildfire -->
+        <div class="emergency-card">
+            <h3>Wildfire</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/wildfire.png') }}"  alt="Wildfire" title="Wildfire">
+            </div>
+            <div class="emergency-details">
+                <p>What to do during a wildfire:</p>
+                <ul>
+                    <li>- Stay updated through local authorities and follow evacuation orders.</li>
+                    <li>- Call for emergency assistance if trapped. <strong>Fire Brigade: 15</strong></li>
+                    <li>- Close windows, vents, and doors to prevent the entry of smoke and embers.</li>
+                    <li>- Move to a safe area away from the fire, such as an open field or body of water.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kitchen Fire -->
+        <div class="emergency-card">
+            <h3>Kitchen Fire</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/kitchen-fire.png') }}" alt="Kitchen Fire" title="Kitchen Fire">
+            </div>
+            <div class="emergency-details">
+                <p>How to handle a kitchen fire:</p>
+                <ul>
+                    <li>- Turn off the heat source immediately, if safe to do so.</li>
+                    <li>- Smother flames with a metal lid or baking soda; do not use water on grease fires.</li>
+                    <li>- Call emergency services if the fire cannot be controlled. <strong>Fire Brigade: 15</strong></li>
+                    <li>- Use a fire extinguisher rated for grease and electrical fires if available.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Electrical Fire -->
+        <div class="emergency-card">
+            <h3>Electrical Fire</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/electrical-fire.png') }}" alt="Electrical Fire" title="Electrical Fire">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to take during an electrical fire:</p>
+                <ul>
+                    <li>- Turn off the electricity at the main switch, if possible.</li>
+                    <li>- Call emergency services immediately. <strong>Fire Brigade: 15</strong></li>
+                    <li>- Use a Class C fire extinguisher; never use water.</li>
+                    <li>- Evacuate the area if the fire spreads or cannot be contained.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chemical Fire -->
+        <div class="emergency-card">
+            <h3>Chemical Fire</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/chemical-fire.jpg') }}" alt="Chemical Fire" title="Chemical Fire">
+            </div>
+            <div class="emergency-details">
+                <p>Handling chemical fires safely:</p>
+                <ul>
+                    <li>- Evacuate the area and call emergency services. <strong>Fire Brigade: 15</strong></li>
+                    <li>- Avoid inhaling fumes; use a cloth to cover your nose and mouth if necessary.</li>
+                    <li>- Keep a safe distance as chemical fires can release toxic gases.</li>
+                    <li>- Do not attempt to extinguish the fire without proper equipment.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Specific Urban Emergency Solutions -->
+
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Newsletter</h2>
+        <p>Subscribe to get offers and latest<br>updates every week!</p>
+    </div>
+
+    <div class="send">
+        <form action="">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Register</a></li>
+                    <li><a href="./login">Register</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    
+            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+
+ 
+</body>
+</html>

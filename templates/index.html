@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityAid Recommendation</title>
+    <link rel="icon" href="./files/logo-app.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+
+</head>
+<body>
+
+<!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="{{ url_for('static', filename='files/vid1.mp4') }}" type="video/mp4" autoplay muted loop></video>
+    
+    <!-- Header -->
+
+    <div class="content" id="home"> 
+        <nav>
+            <img src="{{ url_for('static', filename='files/cityaid.png') }}" class="logo" alt="Logo" title="FirstFlight Travels">
+            
+            <ul class="navbar">
+                <li>
+                    <a href="#home">Home</a>
+                    <a href="./categories">Categories</a>
+                    <a href="./chat">Chatbot</a>
+                    <a href="./register">Sign Up</a>
+                    <a href="./login">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+ 
+        <div class="title">
+            <h1>CITYAID <br/> RECOMMENDATIONS</h1>
+            <p>Discover top-rated urban solutions and services tackling local issues, recommended by real city dwellers!</p>
+            <a href="./register" class="button">Sign Up</a>
+            <a href="./login" class="button-log">Log In</a>
+        </div>
+        </div>
+    </div>
+
+
+    
+
+<!-- Categories Section -->
+<section class="container">
+    <div class="text">
+        <h2>Explore All Urban Emergency Categories</h2>
+    </div>
+    <div class="rowitems">
+        <!-- First Row -->
+        <div class="container-box">
+            <a href="medical-emergency">
+                <div class="container-image">
+                    <img  src="{{ url_for('static', filename='files/medical.png') }}" alt="Medical Emergency">
+                </div>
+                <h4>Medical Emergency</h4>
+                <p>Find urgent care and medical response services.</p>
+            </a>
+        </div>
+        
+        <div class="container-box">
+            <a href="power-outage">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/power.png') }}" alt="Power Outage">
+                </div>
+                <h4>Power Outage</h4>
+                <p>Discover solutions to handle electricity disruptions.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="fire-incident">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/fire.jpg') }}" alt="Fire Incident">
+                </div>
+                <h4>Fire Incident</h4>
+                <p>Learn how to prevent and manage fire emergencies.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="rowitems">
+        <!-- Second Row -->
+        <div class="container-box">
+            <a href="road-accident"> 
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/road.png') }}" alt="Road Accident">
+                </div>
+                <h4>Road Accident</h4>
+                <p>Access quick support for road-related emergencies.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="flood">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/flood.png') }}" alt="Flood">
+                </div>
+                <h4>Flood</h4>
+                <p>Find resources to deal with urban flooding effectively.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="earthquake">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/earthquake.png') }}"  alt="Earthquake">
+                </div>
+                <h4>Earthquake</h4>
+                <p>Learn about safety measures and post-quake recovery.</p>
+            </a>
+        </div>
+    </div>
+     <!-- Bouton pour afficher toutes les catégories -->
+     <div class="text-center">
+        <a href="categories" class="button-categories">See all categories</a>
+    </div>
+</section>
+
+
+
+<!-- AI-Powered Search Section -->
+<section class="ai-search-section">
+    <h2>Ask Our Intelligent Assistant</h2>
+    <div class="ai-search-container">
+        
+        <p>Our AI analyzes thousands of real recommendations from users like you to provide the best choices tailored to your needs. Just type in what you're looking for, and let our smart assistant do the rest!p>
+        <form action="chat" method="get" class="ai-search-form">
+            <div class="search-bar-wrapper">
+                <input 
+                    type="text" 
+                    name="query" 
+                    placeholder="What are you looking for?" 
+                    class="ai-search-bar" 
+                    required
+                >
+                <button type="submit" class="ai-search-btn">
+                    <img src="{{ url_for('static', filename='files/ai-icon.png') }}" alt="AI Icon" />
+                </button>
+            </div>
+        </form>
+        <div class="ai-search-note">
+            <p><strong>Tip:</strong> Try searching for urban solutions, community services, or local initiatives that address city challenges.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Specific Urban Emergency Solutions -->
+<section class="popular-recommendations" id="recommendations">
+    <div class="recommendation-title">
+        <h2>Specific Urban Emergency Solutions</h2>
+        <p>Find tailored solutions for unique urban challenges!</p>
+    </div>
+
+    <div class="recommendation-content">
+        
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='files/1.jpg') }}" alt="Sewer Backup Solutions">
+                <h3>Sewer Backup</h3>
+            </div>
+        
+            <div class="recommendation-content">
+                <div class="recommendation-info">
+                    <h4>How to Handle a Sewer Backup</h4>
+                    <ul class="recommendation-details">
+                        <li>Turn off the water supply to prevent further flooding</li>
+                        <li>Wear protective gear, including gloves and boots</li>
+                        <li>Contact a professional plumber immediately</li>
+                        <li>Clean affected areas with appropriate disinfectants</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='files/2.jpg') }}" alt="Gas Leak Solutions">
+                <h3>Gas Leak</h3>
+            </div>
+        
+            <div class="recommendation-content">
+                <div class="recommendation-info">
+                    <h4>What to Do in Case of a Gas Leak</h4>
+                    <ul class="recommendation-details">
+                        <li>Evacuate the building immediately</li>
+                        <li>Do not use any electrical appliances or switches</li>
+                        <li>Call the gas company or emergency services</li>
+                        <li>Do not re-enter the building until it's declared safe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='files/3.jpg') }}" alt="Pest Invasion Solutions">
+                <h3>Pest Invasion</h3>
+            </div>
+        
+            <div class="recommendation-content">
+                <div class="recommendation-info">
+                    <h4>How to Deal with a Pest Invasion</h4>
+                    <ul class="recommendation-details">
+                        <li>Identify the type of pest and extent of the infestation</li>
+                        <li>Seal all entry points to prevent further invasion</li>
+                        <li>Contact a pest control service for an effective treatment</li>
+                        <li>Use natural repellents for safer home solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='files/4.jpg') }}" " alt="Overflowing Drain Solutions">
+                <h3>Overflowing Drain</h3>
+            </div>
+        
+            <div class="recommendation-content">
+                <div class="recommendation-info">
+                    <h4>How to Solve an Overflowing Drain</h4>
+                    <ul class="recommendation-details">
+                        <li>Turn off water flow to the affected area</li>
+                        <li>Try to unclog the drain using a plunger or drain cleaner</li>
+                        <li>If the problem persists, call a professional plumber</li>
+                        <li>Regularly maintain your drains to prevent future issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='files/5.jpg') }}" alt="Road Pothole Solutions">
+                <h3>Potholes on Roads</h3>
+            </div>
+        
+            <div class="recommendation-content">
+                <div class="recommendation-info">
+                    <h4>How to Address Potholes on Roads</h4>
+                    <ul class="recommendation-details">
+                        <li>Report potholes to your local municipal office</li>
+                        <li>Temporarily fill potholes with cold patch for safety</li>
+                        <li>Advocate for improved road maintenance in your community</li>
+                        <li>Participate in or organize community repair efforts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='files/6.jpg') }}" alt="Unsafe Building Solutions">
+                <h3>Unsafe Building Conditions</h3>
+            </div>
+        
+            <div class="recommendation-content">
+                <div class="recommendation-info">
+                    <h4>How to Respond to Unsafe Building Conditions</h4>
+                    <ul class="recommendation-details">
+                        <li>Immediately vacate the building if it's unsafe</li>
+                        <li>Report the issue to local authorities for inspection</li>
+                        <li>Check for structural damage or fire hazards</li>
+                        <li>Ensure proper safety protocols are in place for repairs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Newsletter</h2>
+        <p>Subscribe to get offers and latest<br>updates every week!</p>
+    </div>
+
+    <div class="send">
+        <form action="">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Sign In</a></li>
+                    <li><a href="./login">Sign Up</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                    
+            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+
+ 
+</body>
+</html>

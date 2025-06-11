@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Shortage | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}"  class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories">Categories</a></li>
+            <li><a href="./chat">Chatbot</a></li>
+            <li><a href="./register">Sign Up</a></li>
+            <li><a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Water Shortage Section -->
+<section class="container water-shortage">
+    <div class="text">
+        <h2>Water Shortage Solutions</h2>
+    </div>
+
+    <!-- Water Shortage Issues and Solutions -->
+    <div class="emergency-grid">
+        <!-- Immediate Water Conservation -->
+        <div class="emergency-card">
+            <h3>Immediate Water Conservation</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/water-conservation.png') }}"   alt="Immediate Water Conservation" title="Immediate Water Conservation">
+            </div>
+            <div class="emergency-details">
+                <p>Steps for immediate water conservation:</p>
+                <ul>
+                    <li>- Turn off taps when not in use.</li>
+                    <li>- Use water-saving appliances (low-flow faucets, showers, etc.).</li>
+                    <li>- Take shorter showers and avoid baths.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Water Rationing -->
+        <div class="emergency-card">
+            <h3>Water Rationing</h3>
+            <div class="emergency-img">
+                <img  src="{{ url_for('static', filename='files/water-rationing.png') }}" alt="Water Rationing" title="Water Rationing">
+            </div>
+            <div class="emergency-details">
+                <p>Guidelines for rationing water during shortages:</p>
+                <ul>
+                    <li>- Prioritize water use for essential needs (drinking, sanitation, etc.).</li>
+                    <li>- Implement scheduled water distribution if possible.</li>
+                    <li>- Educate communities on sustainable water practices.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Water Reuse -->
+        <div class="emergency-card">
+            <h3>Water Reuse</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/water-reuse.png') }}"  alt="Water Reuse" title="Water Reuse">
+            </div>
+            <div class="emergency-details">
+                <p>How to implement water reuse during shortages:</p>
+                <ul>
+                    <li>- Use greywater for irrigation and non-potable uses.</li>
+                    <li>- Install water filtration systems for safe reuse.</li>
+                    <li>- Avoid reusing water for drinking or cooking unless it’s properly treated.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Water Delivery Services -->
+        <div class="emergency-card">
+            <h3>Water Delivery Services</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/water-delivery.png') }}" alt="Water Delivery Services" title="Water Delivery Services">
+            </div>
+            <div class="emergency-details">
+                <p>How to access emergency water delivery services:</p>
+                <ul>
+                    <li>- Contact local authorities or water distribution companies.</li>
+                    <li>- Arrange for deliveries to homes or community centers if needed.</li>
+                    <li>- Ensure the water source is safe and properly disinfected.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI-Powered Search Section -->
+<section class="ai-search-section">
+    <h2>Ask Our Intelligent Assistant</h2>
+    <div class="ai-search-container">
+        
+        <p>Our AI analyzes thousands of real recommendations from users like you to provide the best choices tailored to your needs. Just type in what you're looking for, and let our smart assistant do the rest!</p>
+        <form action="chatbot.html" method="get" class="ai-search-form">
+            <div class="search-bar-wrapper">
+                <input 
+                    type="text" 
+                    name="query" 
+                    placeholder="What are you looking for?" 
+                    class="ai-search-bar" 
+                    required
+                >
+                <button type="submit" class="ai-search-btn">
+                    <img src="{{ url_for('static', filename='files/ai-icon.png') }}" alt="AI Icon" />
+                </button>
+            </div>
+        </form>
+        <div class="ai-search-note">
+            <p><strong>Tip:</strong> Try searching for water-saving tips, water distribution methods, or drought solutions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Sign In</a></li>
+                    <li><a href="./login">Sign Up</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+</body>
+</html>

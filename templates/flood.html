@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floods | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}"  class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories">Categories</a></li>
+            <li><a href="./chatbot">Chatbot</a></li>
+            <li><a href="./register">Sign Up</a></li>
+            <li><a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container medical-emergencies">
+    <div class="text">
+        <h2>Flood Emergency Solutions</h2>
+    </div>
+
+    <!-- Flood Emergency Solutions -->
+    <div class="emergency-grid">
+        <!-- Flash Flood -->
+        <div class="emergency-card">
+            <h3>Flash Flood</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/flash-flood.png') }}" alt="Flash Flood" title="Flash Flood">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to take during a flash flood:</p>
+                <ul>
+                    <li>- Move to higher ground immediately and avoid low-lying areas.</li>
+                    <li>- Do not walk or drive through floodwaters; water depth can be deceptive.</li>
+                    <li>- Call emergency services if trapped. <strong>Morocco Civil Protection: 15</strong></li>
+                    <li>- Avoid bridges over fast-moving water as they can collapse.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Urban Flooding -->
+        <div class="emergency-card">
+            <h3>Urban Flooding</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/urban-flood.png') }}"  alt="Urban Flooding" title="Urban Flooding">
+            </div>
+            <div class="emergency-details">
+                <p>What to do during urban flooding:</p>
+                <ul>
+                    <li>- Avoid contact with floodwater as it may be contaminated.</li>
+                    <li>- Call emergency services for assistance. <strong>Morocco Civil Protection: 15</strong></li>
+                    <li>- Disconnect electrical appliances to prevent electrocution.</li>
+                    <li>- Evacuate to designated shelters if instructed by authorities.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- River Flood -->
+        <div class="emergency-card">
+            <h3>River Flood</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/river-flood.png') }}" alt="River Flood" title="River Flood">
+            </div>
+            <div class="emergency-details">
+                <p>Precautions for river flooding:</p>
+                <ul>
+                    <li>- Monitor weather updates and river levels regularly.</li>
+                    <li>- Evacuate early if flooding is expected. Call for help if necessary. <strong>Morocco Civil Protection: 15</strong></li>
+                    <li>- Do not camp or park near rivers during heavy rains.</li>
+                    <li>- Move essential items to higher levels of your home.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Coastal Flooding -->
+        <div class="emergency-card">
+            <h3>Coastal Flooding</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/coastal-flooding.png') }}" alt="Coastal Flooding" title="Coastal Flooding">
+            </div>
+            <div class="emergency-details">
+                <p>What to do in case of coastal flooding:</p>
+                <ul>
+                    <li>- Move inland or to higher ground as soon as possible.</li>
+                    <li>- Follow evacuation orders from local authorities.</li>
+                    <li>- Call for assistance if stranded. <strong>Morocco Civil Protection: 15</strong></li>
+                    <li>- Avoid walking or driving through flooded coastal areas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Flood Aftermath -->
+        <div class="emergency-card">
+            <h3>Flood Aftermath</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/flood-aftermath.png') }}" alt="Flood Aftermath" title="Flood Aftermath">
+            </div>
+            <div class="emergency-details">
+                <p>Post-flood safety tips:</p>
+                <ul>
+                    <li>- Avoid returning home until it is declared safe by authorities.</li>
+                    <li>- Call for help to report damage or unsafe conditions. <strong>Morocco Civil Protection: 15</strong></li>
+                    <li>- Avoid drinking tap water until it is confirmed safe.</li>
+                    <li>- Dispose of items contaminated by floodwaters to prevent health risks.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Specific Urban Emergency Solutions -->
+
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Newsletter</h2>
+        <p>Subscribe to get offers and latest<br>updates every week!</p>
+    </div>
+
+    <div class="send">
+        <form action="">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Register</a></li>
+                    <li><a href="./login">Register</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    
+            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+
+ 
+</body>
+</html>

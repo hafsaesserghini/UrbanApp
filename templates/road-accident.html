@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Accident | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}"  class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories">Categories</a></li>
+            <li><a href="./chatbot">Chatbot</a></li>
+            <li><a href="./register">Sign Up</a></li>
+            <li><a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Road Accident Emergency Section -->
+<section class="container road-accidents">
+    <div class="text">
+        <h2>Road Accident Solutions</h2>
+    </div>
+
+    <!-- Frequent Road Accident Issues and Solutions -->
+    <div class="emergency-grid">
+        <!-- Head Injury -->
+        <div class="emergency-card">
+            <h3>Head Injury</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/head-injury.png') }}" alt="Head Injury" title="Head Injury">
+            </div>
+            <div class="emergency-details">
+                <p>Quick steps to handle a head injury during an accident:</p>
+                <ul>
+                    <li>- Call emergency services immediately.</li>
+                    <li>- Keep the person still and avoid moving their neck.</li>
+                    <li>- Apply a cold compress to reduce swelling.</li>
+                    <li>- If the person loses consciousness, perform CPR and monitor breathing until help arrives.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Broken Bones -->
+        <div class="emergency-card">
+            <h3>Broken Bones</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/broken-bones.png') }}" alt="Broken Bones" title="Broken Bones">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to handle broken bones during an accident:</p>
+                <ul>
+                    <li>- Keep the injured person still and calm.</li>
+                    <li>- Do not move the broken limb unless necessary.</li>
+                    <li>- Apply a splint if possible to immobilize the limb.</li>
+                    <li>- Seek immediate medical attention.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Spinal Injury -->
+        <div class="emergency-card">
+            <h3>Spinal Injury</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/spinal-injury.png') }}" alt="Spinal Injury" title="Spinal Injury">
+            </div>
+            <div class="emergency-details">
+                <p>How to manage a spinal injury during a road accident:</p>
+                <ul>
+                    <li>- Do not move the person unless absolutely necessary.</li>
+                    <li>- Call for emergency services immediately.</li>
+                    <li>- Keep the person still and provide support to their head and neck.</li>
+                    <li>- Reassure the person and monitor their breathing while waiting for help.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Severe Bleeding -->
+        <div class="emergency-card">
+            <h3>Severe Bleeding</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/severe-bleeding.png') }}" alt="Severe Bleeding" title="Severe Bleeding">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to handle severe bleeding after a road accident:</p>
+                <ul>
+                    <li>- Apply direct pressure to the wound using a clean cloth.</li>
+                    <li>- If possible, elevate the injured area above heart level.</li>
+                    <li>- Continue applying pressure until help arrives.</li>
+                    <li>- Seek immediate medical help for significant blood loss.</li>
+                </ul>
+            </div>
+        </div>
+
+    
+    </div>
+</section>
+
+<!-- AI-Powered Search Section -->
+<section class="ai-search-section">
+    <h2>Ask Our Intelligent Assistant</h2>
+    <div class="ai-search-container">
+        
+        <p>Our AI analyzes thousands of real recommendations from users like you to provide the best choices tailored to your needs. Just type in what you're looking for, and let our smart assistant do the rest!</p>
+        <form action="chatbot.html" method="get" class="ai-search-form">
+            <div class="search-bar-wrapper">
+                <input 
+                    type="text" 
+                    name="query" 
+                    placeholder="What are you looking for?" 
+                    class="ai-search-bar" 
+                    required
+                >
+                <button type="submit" class="ai-search-btn">
+                    <img src="{{ url_for('static', filename='files/ai-icon.png') }}" alt="AI Icon" />
+                </button>
+            </div>
+        </form>
+        <div class="ai-search-note">
+            <p><strong>Tip:</strong> Try searching for road safety measures, accident prevention, or first responder tips.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./registerl">Sign In</a></li>
+                    <li><a href="./login">Sign Up</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityAid Recommendation</title>
+    <link rel="icon" href="./files/logo-app.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+
+</head>
+<body>
+
+
+<!-- Header Section -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/cityaid.png') }}" "./files/logo-app.png" class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a>
+            <a href="./categories">Categories</a>
+            <a href="./chat">Chatbot</a>
+            <a href="./register">Sign Up</a>
+            <a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Categories Section -->
+<section class="container">
+    <div class="text">
+        <h2>Explore All Urban Emergency Categories</h2>
+    </div>
+    <div class="rowitems">
+        <!-- First Row -->
+        <div class="container-box">
+            <a href="medical-emergency">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/medical.png') }}" alt="Medical Emergency">
+                </div>
+                <h4>Medical Emergency</h4>
+                <p>Find urgent care and medical response services.</p>
+            </a>
+        </div>
+        
+        <div class="container-box">
+            <a href="power-outage">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/power.png') }}" alt="Power Outage">
+                </div>
+                <h4>Power Outage</h4>
+                <p>Discover solutions to handle electricity disruptions.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="fire-incident">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/fire.jpg') }}" alt="Fire Incident">
+                </div>
+                <h4>Fire Incident</h4>
+                <p>Learn how to prevent and manage fire emergencies.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="rowitems">
+        <!-- Second Row -->
+        <div class="container-box">
+            <a href="road-accident"> 
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/road.png') }}" alt="Road Accident">
+                </div>
+                <h4>Road Accident</h4>
+                <p>Access quick support for road-related emergencies.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="flood">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/flood.png') }}" alt="Flood">
+                </div>
+                <h4>Flood</h4>
+                <p>Find resources to deal with urban flooding effectively.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="earthquake">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/earthquake.png') }}" alt="Earthquake">
+                </div>
+                <h4>Earthquake</h4>
+                <p>Learn about safety measures and post-quake recovery.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="rowitems">
+        <!-- Third Row (New Categories) -->
+        <div class="container-box">
+            <a href="water-shortage">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/water.png') }}" alt="Water Shortage">
+                </div>
+                <h4>Water Shortage</h4>
+                <p>Explore solutions for water scarcity and emergency water supply.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="transportation-disruption">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/transport.png') }}" alt="Transportation Disruption">
+                </div>
+                <h4>Transportation Disruption</h4>
+                <p>Manage urban transport interruptions effectively.</p>
+            </a>
+        </div>
+
+        <div class="container-box">
+            <a href="pollution-hazard">
+                <div class="container-image">
+                    <img src="{{ url_for('static', filename='files/pollution.png') }}" alt="Pollution Hazard">
+                </div>
+                <h4>Pollution Hazard</h4>
+                <p>Find ways to handle hazardous air and environmental pollution.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>Copyright © 2025 CityAid Recommendations. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

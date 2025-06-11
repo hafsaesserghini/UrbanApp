@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powe outage | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}"  class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./chatbot.html">Chatbot</a></li>
+            <li><a href="./register.html">Sign Up</a></li>
+            <li><a href="./login.html">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container medical-emergencies">
+    <div class="text">
+        <h2>Power Outage Solutions</h2>
+    </div>
+
+    <!-- Power Outage Solutions -->
+    <div class="emergency-grid">
+        <!-- Sudden Power Outage -->
+        <div class="emergency-card">
+            <h3>Sudden Power Outage</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/power-outage.png') }}"  alt="Sudden Power Outage" title="Sudden Power Outage">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to handle a sudden power outage:</p>
+                <ul>
+                    <li>- Check if the outage is limited to your home or affects the entire neighborhood.</li>
+                    <li>- Turn off and unplug appliances to prevent damage from power surges.</li>
+                    <li>- Use flashlights instead of candles to avoid fire hazards.</li>
+                    <li>- Report the outage to the utility company. <strong>Morocco Electricity Hotline: 080 000 77 77</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Long-Term Power Outage -->
+        <div class="emergency-card">
+            <h3>Long-Term Outage</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/long-term-outage.png') }}" alt="Long-Term Outage" title="Long-Term Outage">
+            </div>
+            <div class="emergency-details">
+                <p>How to manage a long-term power outage:</p>
+                <ul>
+                    <li>- Keep refrigerators and freezers closed to maintain food freshness.</li>
+                    <li>- Use generators safely by keeping them outdoors and away from windows.</li>
+                    <li>- Stay warm by wearing layers of clothing and using blankets.</li>
+                    <li>- Call your utility provider for updates. <strong>Morocco Electricity Hotline: 080 000 77 77</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Electrical Hazards -->
+        <div class="emergency-card">
+            <h3>Electrical Hazards</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/electrical-hazard.png') }}"  alt="Electrical Hazards" title="Electrical Hazards">
+            </div>
+            <div class="emergency-details">
+                <p>Precautions during a power outage:</p>
+                <ul>
+                    <li>- Avoid downed power lines and report them immediately. <strong>Morocco Emergency Line: 15</strong></li>
+                    <li>- Do not touch electrical equipment with wet hands or while standing in water.</li>
+                    <li>- Ensure proper ventilation when using fuel-powered equipment.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Backup Planning -->
+        <div class="emergency-card">
+            <h3>Backup Planning</h3>
+            <div class="emergency-img">
+                <img  src="{{ url_for('static', filename='files/backup-planning.png') }}"  alt="Backup Planning" title="Backup Planning">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to prepare for power outages:</p>
+                <ul>
+                    <li>- Invest in a backup generator for critical appliances.</li>
+                    <li>- Stock up on batteries, power banks, and flashlights.</li>
+                    <li>- Keep a supply of non-perishable food and water.</li>
+                    <li>- Know how to manually operate your garage door or security systems.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Power Restoration -->
+        <div class="emergency-card">
+            <h3>Power Restoration</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/power-restoration.png') }}" alt="Power Restoration" title="Power Restoration">
+            </div>
+            <div class="emergency-details">
+                <p>After power is restored:</p>
+                <ul>
+                    <li>- Turn appliances back on gradually to avoid overloading the system.</li>
+                    <li>- Check your food for spoilage, especially in the refrigerator and freezer.</li>
+                    <li>- Report any partial power issues to your utility provider. <strong>Morocco Electricity Hotline: 080 000 77 77</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Specific Urban Emergency Solutions -->
+
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Newsletter</h2>
+        <p>Subscribe to get offers and latest<br>updates every week!</p>
+    </div>
+
+    <div class="send">
+        <form action="">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Register</a></li>
+                    <li><a href="./login">Register</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    
+            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+
+ 
+</body>
+</html>

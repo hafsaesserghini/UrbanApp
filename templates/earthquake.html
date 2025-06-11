@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake | CityAid Recommendations</title>
+    <link rel="icon" href="./files/CityAid.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <img src="{{ url_for('static', filename='files/CityAid.png') }}" class="logo" alt="Logo" title="CityAid">
+        <ul class="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./categories">Categories</a></li>
+            <li><a href="./chat">Chatbot</a></li>
+            <li><a href="./register">Sign Up</a></li>
+            <li><a href="./login">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container medical-emergencies">
+    <div class="text">
+        <h2>Earthquake Emergency Solutions</h2>
+    </div>
+
+    <!-- Earthquake Emergency Solutions -->
+    <div class="emergency-grid">
+        <!-- During an Earthquake -->
+        <div class="emergency-card">
+            <h3>During an Earthquake</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/during-earthquake.png') }}" alt="During an Earthquake" title="During an Earthquake">
+            </div>
+            <div class="emergency-details">
+                <p>Steps to stay safe during an earthquake:</p>
+                <ul>
+                    <li>- Drop to the ground, take cover under a sturdy table, and hold on until shaking stops.</li>
+                    <li>- Stay indoors until the shaking stops and it is safe to exit.</li>
+                    <li>- If outdoors, move to an open area away from buildings, trees, and utility wires.</li>
+                    <li>- Avoid elevators and stairwells during the quake.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- After an Earthquake -->
+        <div class="emergency-card">
+            <h3>After an Earthquake</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/after-earthquake.png') }}"  alt="After an Earthquake" title="After an Earthquake">
+            </div>
+            <div class="emergency-details">
+                <p>What to do after the shaking stops:</p>
+                <ul>
+                    <li>- Check yourself and others for injuries and provide first aid if necessary.</li>
+                    <li>- Be prepared for aftershocks and move to a safe location if the building is damaged.</li>
+                    <li>- Avoid using matches, lighters, or electrical switches in case of gas leaks.</li>
+                    <li>- Contact emergency services if help is needed. <strong>Morocco Emergency Line: 15</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Evacuation -->
+        <div class="emergency-card">
+            <h3>Evacuation</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/evacuation.png') }}"  alt="Evacuation" title="Evacuation">
+            </div>
+            <div class="emergency-details">
+                <p>When and how to evacuate safely:</p>
+                <ul>
+                    <li>- Leave the building if it is unsafe, using stairs instead of elevators.</li>
+                    <li>- Carry an emergency kit with essentials like water, food, and a flashlight.</li>
+                    <li>- Follow evacuation routes and listen to local authorities for guidance.</li>
+                    <li>- Call for assistance if trapped. <strong>Morocco Civil Protection: 177</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Emergency Kit Preparation -->
+        <div class="emergency-card">
+            <h3>Emergency Kit Preparation</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/emergency-kit.png') }}"  alt="Emergency Kit" title="Emergency Kit">
+            </div>
+            <div class="emergency-details">
+                <p>What to include in an emergency kit:</p>
+                <ul>
+                    <li>- Water (at least 1 gallon per person per day).</li>
+                    <li>- Non-perishable food items and a manual can opener.</li>
+                    <li>- Flashlights, batteries, a first aid kit, and essential medications.</li>
+                    <li>- Copies of personal documents and a portable phone charger.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Communication During Emergencies -->
+        <div class="emergency-card">
+            <h3>Communication During Emergencies</h3>
+            <div class="emergency-img">
+                <img src="{{ url_for('static', filename='files/communication.png') }}" alt="Communication During Emergencies" title="Communication During Emergencies">
+            </div>
+            <div class="emergency-details">
+                <p>Stay connected and informed:</p>
+                <ul>
+                    <li>- Use text messages or social media to communicate instead of phone calls.</li>
+                    <li>- Tune in to local radio or TV channels for updates.</li>
+                    <li>- Inform family and friends of your safety through an emergency contact plan.</li>
+                    <li>- For urgent assistance, call <strong>Morocco Emergency Line: 15</strong> or <strong>Civil Protection: 177</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Specific Urban Emergency Solutions -->
+
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Newsletter</h2>
+        <p>Subscribe to get offers and latest<br>updates every week!</p>
+    </div>
+
+    <div class="send">
+        <form action="">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register">Register</a></li>
+                    <li><a href="./login">Register</a></li>
+                    <li><a href="./about">About Us</a></li>
+                    <li><a href="./contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    
+            
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2025 CityAid Recommendations All Rights Reserved.</p>
+    </div>
+</section>
+
+
+ 
+</body>
+</html>
